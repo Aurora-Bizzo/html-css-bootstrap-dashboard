@@ -53,10 +53,32 @@ ul {
             padding-top: 3px;
         }
 
+        .ul-margin {
+            margin-left: 24px;
+        }
+
     /*icons-end*/
 
 /*topbar-end*/
 
+/*main*/
+
+    main {
+        height: calc(100vh - 92px);
+        width: 100%;
+    }
+
+    /*aside*/
+
+        aside {
+            background-color: black;
+            height: 100%;
+            width: 85px
+        }
+
+    /*aside-end*/
+
+/*main-end*/
 
 @media screen and (min-width: 992px) {
     
@@ -74,6 +96,14 @@ ul {
 
     .topbar-ul li {
         margin-left: 20px;
+    }
+
+    .ul-margin {
+        margin: 0;
+    }
+
+    aside {
+        width: 165px;
     }
 
 }
