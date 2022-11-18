@@ -21,7 +21,7 @@ ul {
             height: 70px;
         }
 
-        .logo-2, .hide-icon {
+        .logo-2, .hide-icon, .side-text {
             display: none;
         }
 
@@ -71,9 +71,23 @@ ul {
     /*aside*/
 
         aside {
-            background-color: black;
+            background-color: rgb(5, 30, 52);
             height: 100%;
             width: 85px
+        }
+
+        .sidebar-ul {
+            padding: 0;
+        }
+
+        .gear {
+            position: fixed;
+            bottom: 0;
+            padding: 30px;  
+        }
+
+        .side-icon {
+            font-size: 25px;
         }
 
     /*aside-end*/
@@ -90,6 +104,10 @@ ul {
         display: block;
     }
 
+    .side-text {
+        display: inline-block;
+    }
+
     .logo-2 {
         width: 170px;
     }
@@ -102,8 +120,16 @@ ul {
         margin: 0;
     }
 
+    .side-icon, .side-text{
+        font-size: 20px;
+    }
+
     aside {
         width: 165px;
+    }
+
+    .gear {
+        padding: 30px 37px;
     }
 
 }

@@ -10,47 +10,80 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid my-2 py-1 bg-white">
-            <div class="logo me-4">
-                <img class="w-100" src="./img/mobile-logo.png" alt="">
+    <!--top-navbar-->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid my-2 py-1 bg-white">
+                <!--logo-->
+                    <div class="logo me-4">
+                        <img class="w-100" src="./img/mobile-logo.png" alt="">
+                    </div>
+                    <div class="logo-2 me-3">
+                        <img class="w-100" src="./img/logo.svg" alt="">
+                    </div>
+                <!--logo-end-->
+                <!--search-bar-->
+                    <div class="input-group w-auto flex-grow-1">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text flat-radius" id="basic-addon1">
+                            <i class="fa-solid fa-magnifying-glass font-22 py-2"></i>
+                        </span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                    </div>
+                <!--search-bar-end-->
+                <!--icons-->
+                    <div>
+                        <ul class="d-inline-flex p-2 topbar-ul ul-margin">
+                            <li>
+                                <i class="fa-solid fa-list hide-icon text-secondary padding-top-3"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-question hide-icon text-secondary padding-top-3"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-ellipsis-vertical hide-icon text-secondary padding-top-3"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                <!--icons-end-->
             </div>
-            <div class="logo-2 me-3">
-                <img class="w-100" src="./img/logo.svg" alt="">
-            </div>
-
-            <div class="input-group w-auto flex-grow-1">
-                <div class="input-group-prepend">
-                <span class="input-group-text flat-radius" id="basic-addon1">
-                    <i class="fa-solid fa-magnifying-glass font-22 py-2"></i>
-                </span>
-                </div>
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
-            </div>
-
-            <div>
-                <ul class="d-inline-flex p-2 topbar-ul ul-margin">
-                    <li>
-                        <i class="fa-solid fa-list hide-icon text-secondary padding-top-3"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle-question hide-icon text-secondary padding-top-3"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-ellipsis-vertical hide-icon text-secondary padding-top-3"></i>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-bell text-warning"></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
+        </nav>
+    <!--top-navbar-end-->
     <header></header>
     <main>
-        <aside>
-
-        </aside>
+        <!--aside-->
+            <aside class="text-center">
+                <!--aside-top-->
+                <div>
+                    <ul class="d-flex flex-column text-white sidebar-ul py-3">
+                        <li class="my-2">
+                            <i class="fa-solid fa-house side-icon"></i>
+                            <span class="ps-2 side-text">Home</span>
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-chart-simple side-icon"></i>
+                            <span class="ps-4 side-text">Stats</span>
+                        </li>
+                        <li class="my-2">
+                            <i class="fa-solid fa-signal side-icon"></i>
+                            <span class="ps-2 side-text">Signals</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--aside-top-end-->
+                <!--aside-bottom-->
+                <div class="text-white gear">
+                    <div>
+                        <i class="fa-solid fa-gear side-icon"></i>
+                        <span class="ps-2 side-text">Admin</span>
+                    </div>
+                </div>
+                <!--aside-bottom-end-->
+            </aside>
+        <!--aside-end-->
     </main>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
