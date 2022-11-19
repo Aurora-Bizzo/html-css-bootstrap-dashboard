@@ -16,6 +16,10 @@ ul {
     font-size: 22px;
 }
 
+.font-13 {
+    font-size: 13px;
+}
+
 /*topbar*/
 
     /*logo*/
@@ -111,12 +115,45 @@ ul {
             border-radius: 10px;
         }
 
+        .plus {
+            padding: 6px;
+            font-size: 9px;
+        }
+
+        .app {
+            display: none;
+        }
+
+        .red-circle {
+            width: 35px;
+            height: 35px;
+        }
+
+        .table-button {
+            padding: 7px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
     /*main*/
 
 /*main-end*/
 
+@media screen and (max-width: 767px) {
+    
+    .t-col-2, .t-col-3 {
+        display: none;
+    }
+
+}
+
+
 @media screen and (min-width: 768px) {
     
+    .big-table-row {
+        width: 40%;  
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -163,6 +200,28 @@ ul {
 
     main {
         width: calc(100vw - 165px);
+    }
+
+    .plus {
+        display: none;
+    }
+
+    .app {
+        display: inline-block;
+    }
+
+    .big-table-row {
+        width: 50%;  
+    }
+
+}
+
+@media screen and (min-width: 1310px) {
+    
+    .new-students {
+        width: fit-content;
+        float: right;
+        padding-right: 20px;
     }
 
 }
