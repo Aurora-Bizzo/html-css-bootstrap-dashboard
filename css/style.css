@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 ul {
     list-style-type: none;
 }
@@ -61,12 +65,15 @@ ul {
 
 /*topbar-end*/
 
+.wrapper {
+    width: 100vw;
+    height: calc(100vh - 110px);
+    display: flex;
+}
+
 /*main*/
 
-    main {
-        height: calc(100vh - 92px);
-        width: 100%;
-    }
+    
 
     /*aside*/
 
@@ -92,7 +99,25 @@ ul {
 
     /*aside-end*/
 
+    /*main*/
+
+        main {
+            width: calc(100vw - 85px);
+            height: 100%;
+        }
+
+        .badge-blue {
+            background-color: rgb(22, 91, 186);
+            border-radius: 10px;
+        }
+
+    /*main*/
+
 /*main-end*/
+
+@media screen and (min-width: 768px) {
+    
+}
 
 @media screen and (min-width: 992px) {
     
@@ -130,6 +155,14 @@ ul {
 
     .gear {
         padding: 30px 37px;
+    }
+
+    .wrapper {
+        height: calc(100vh - 92px);
+    }
+
+    main {
+        width: calc(100vw - 165px);
     }
 
 }
