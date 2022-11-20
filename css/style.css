@@ -65,6 +65,10 @@ ul {
             margin-left: 24px;
         }
 
+        .left-145 {
+            left: -145px !important;
+        }
+
     /*icons-end*/
 
 /*topbar-end*/
@@ -101,6 +105,10 @@ ul {
             font-size: 25px;
         }
 
+        .gray-hover:hover {
+            background-color: lightslategray;
+        }
+
     /*aside-end*/
 
     /*main*/
@@ -133,6 +141,10 @@ ul {
             padding: 7px;
             border: 1px solid gray;
             border-radius: 5px;
+        }
+
+        .offcanvas-width {
+            width: 100% !important;
         }
 
     /*main*/
@@ -212,6 +224,14 @@ ul {
 
     .big-table-row {
         width: 50%;  
+    }
+
+    .w-lg-50 {
+        width: 50%;
+    }
+
+    .offcanvas-width {
+        width: 50% !important;
     }
 
 }

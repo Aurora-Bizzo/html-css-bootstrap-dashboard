@@ -47,7 +47,17 @@
                                 <i class="fa-solid fa-ellipsis-vertical hide-icon text-secondary padding-top-3"></i>
                             </li>
                             <li>
-                                <i class="fa-solid fa-bell text-warning"></i>
+                                <div class="dropdown">
+                                    <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-bell text-warning"></i>
+                                    </a>
+                                  
+                                    <ul class="dropdown-menu left-145">
+                                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -63,15 +73,15 @@
                 <!--aside-top-->
                 <div>
                     <ul class="d-flex flex-column text-white sidebar-ul py-3">
-                        <li class="my-2">
+                        <li class="my-2 gray-hover">
                             <i class="fa-solid fa-house side-icon"></i>
                             <span class="ps-2 side-text">Home</span>
                         </li>
-                        <li class="my-2">
+                        <li class="my-2 gray-hover">
                             <i class="fa-solid fa-chart-simple side-icon"></i>
                             <span class="ps-3 side-text">Stats</span>
                         </li>
-                        <li class="my-2">
+                        <li class="my-2 gray-hover">
                             <i class="fa-solid fa-signal side-icon"></i>
                             <span class="ps-2 side-text">Signals</span>
                         </li>
@@ -98,15 +108,83 @@
                             <div class="content new-students">
                                 <span class="me-2 text-white">Nuovo Studente</span>
                                 <button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
-                                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <!--offcanvas-->
+                                    <div class="offcanvas offcanvas-end offcanvas-width" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                <label for="formGroupExampleInput" class="form-label">Nome</label>
+                                                <input type="text" class="form-control bg-white" aria-label="First name">
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                <label for="formGroupExampleInput" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control bg-white" aria-label="Last name">
+                                                </div>
+
+                                                <div class="col-md-6 mt-3">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text">@</span>
+                                                        <div class="form-floating">
+                                                        <input type="text" class="form-control bg-white" id="floatingInputGroup1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mt-3">
+                                                    <label for="inputPassword4" class="form-label">Password</label>
+                                                    <input type="password" class="form-control bg-white" id="inputPassword4">
+                                                </div>
+
+                                                <div class="col-12 mt-3">
+                                                    <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control bg-white" id="inputAddress">
+                                                </div>
+
+                                                <div class="col-md-6 mt-3">
+                                                    <label for="inputCity" class="form-label">Città</label>
+                                                    <input type="text" class="form-control bg-white" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4 mt-3">
+                                                    <label for="inputState" class="form-label">Stato</label>
+                                                    <select id="inputState" class="form-select">
+                                                    <option selected>Scegli...</option>
+                                                    <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2 mt-3">
+                                                    <label for="inputZip" class="form-label">CAP</label>
+                                                    <input type="text" class="form-control bg-white" id="inputZip">
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text">Scegli file</span>
+                                                        <div class="form-floating">
+                                                        <input type="text" class="form-control bg-white" id="floatingInputGroup1">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-3">
+                                                    <div class="form-check">
+                                                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                      <label class="form-check-label" for="gridCheck">
+                                                        Seleziona per proseguire
+                                                      </label>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-12 pt-2">
+                                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                                    <button type="reset" class="btn btn-warning">Svuota</button>
+                                                  </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="offcanvas-body">
-                                        ...
-                                    </div>
-                                </div>
+                                <!--offcanvas-end-->
                             </div>
                         </div>
                     <!--new-students-end-->
@@ -329,11 +407,47 @@
                     <!--column-left-end-->
                     <!--column-right-->
                         <div class="col-12 col-lg-4">
-                            <div class="card">
+                            <div class="card mt-4 mt-lg-0">
                                 <div class="card-header">
                                     <h3>Todo</h3>
                                 </div>
-                                
+                                <div class="p-3">
+                                    <div class="card">
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">
+                                            <input type="checkbox">
+                                            <span>Kickoff nuove classi</span>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <input type="checkbox">
+                                            <span>Lezione su Bootstrap in classe #75</span>
+                                          </li>
+                                          <li class="list-group-item">
+                                            <input type="checkbox">
+                                            <span>Controllare username github studenti</span>
+                                          </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mt-4">
+                                <div class="p-3">
+                                    <div class="card">
+                                        <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Utenti attivi</h5>
+                                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">Gennaio: 1200</li>
+                                          <li class="list-group-item">Febbraio: 800</li>
+                                          <li class="list-group-item">Marzo: 1500</li>
+                                        </ul>
+                                        <div class="card-body">
+                                          <a href="#" class="card-link">Visualizza report approfondito</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     <!--column-right-->
